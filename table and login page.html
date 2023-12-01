@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Page In Table</title>
+    <h1> <i> Welcome To The <u> "The WebPage"</u> </i></h1>
+</head>
+
+<body background="woow.jpg">
+    <table border="1" cellpadding="5" cellspacing="5">
+
+        <tr>
+            <th>
+                <form>Enter Your User ID</form>
+            </th>
+            <th><input type="text" id="username"></th>
+        </tr>
+        <tr>
+            <th>
+                <form>Password</form>
+            </th>
+            <th><input type="password" id="password"></th>
+        </tr>
+        <tr>
+            <th>
+                <form>Gender</form>
+            </th>
+            <th><input type="radio" name="gen1">Male
+                <input type="radio" name="gen1">Female
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <form>Age</form>
+            </th>
+            <th><input type="number"></th>
+        </tr>
+        <tr>
+            <th>
+                <form>Upload File</form>
+            </th>
+            <th><input type="file"></th>
+        </tr>
+        <tr>
+            <th>
+                <form>Feedbacks And Suggestions</form>
+            </th>
+            <th><textarea cols="30" rows="5"></textarea></th>
+        </tr>
+    </table><br>
+    <form>
+        <input type="submit" onclick=" return displayoutput()" value="Submit">
+        <input type="reset">
+    </form>
+
+    <script>
+        const displayoutput = () => {
+            let myusername = document.getElementById('username').value;
+            let mypassword = document.getElementById('password').value;
+            if (myusername == '') {
+                alert("Enter Your Name")
+                return false;
+            } else if (mypassword == '') {
+                alert("Enter Your Password")
+                return false;
+            }
+            else {
+                alert("Your Name is " + myusername + " Your Password Is " + mypassword)
+                return false
+
+            }
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>
